@@ -8,9 +8,8 @@
     "deploy": "gulp deploy",
     "testdata": "node lib/testdata.js",
     "test": "ava",
-    "prettier": "prettier --write **/*.js",
     "dev": "gulp watch",
-    "lint": "eslint --fix ./"
+    "lint": "eslint ./"
   },
   "ava": {
     "serial": true,
@@ -23,9 +22,6 @@
       "NODE_ENV": "test"
     }
   },
-  "engines": {
-    "node": "12.4.0"
-  },
   "dependencies": {
     "@adyen/api-library": "^2.1.7",
     "ajv": "^6.10.2",
@@ -36,14 +32,11 @@
     "body-parser": "^1.19.0",
     "cheerio": "^0.22.0",
     "colors": "^1.4.0",
-    "config": "^3.3.1",
     "connect-mongodb-session": "^2.2.0",
     "cookie-parser": "^1.4.4",
     "countries-list": "^2.5.0",
     "csurf": "^1.11.0",
     "dotenv": "^8.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-rate-limit": "^5.0.0",
@@ -54,7 +47,6 @@
     "gulp-less": "^4.0.1",
     "helmet": "^3.21.2",
     "html-entities": "^1.2.0",
-    "husky": "^4.2.5",
     "i18n": "^0.8.4",
     "lodash": "^4.17.15",
     "lunr": "^2.3.8",
@@ -71,8 +63,6 @@
     "numeral": "^2.0.6",
     "object-hash": "^2.0.1",
     "paypal-rest-sdk": "^1.6.9",
-    "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1",
     "rand-token": "^0.4.0",
     "rimraf": "^2.7.1",
     "sanitize-html": "^1.20.1",
@@ -86,10 +76,12 @@
   "devDependencies": {
     "ava": "^2.4.0",
     "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-extra-rules": "0.0.0-development",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "gulp": "^4.0.2",
@@ -97,7 +89,10 @@
     "gulp-minify": "^3.1.0",
     "gulp-nodemon": "^2.5.0",
     "gulp-rename": "^1.4.0",
+    "husky": "^4.2.5",
     "less": "^3.10.3",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
     "supertest": "^4.0.2"
   },
   "main": "app.js",

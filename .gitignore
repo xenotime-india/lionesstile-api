@@ -6,4 +6,3 @@ public/uploads
 **.DS_Store
 env.yaml
 ecosystem.config.js
-.env
