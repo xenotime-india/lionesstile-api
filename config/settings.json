@@ -17,7 +17,7 @@
     "customCss": "",
     "currencySymbol": "£",
     "paymentGateway": "stripe",
-    "databaseConnectionString": "mongodb://127.0.0.1:27017/expresscart",
+    "databaseConnectionString": "mongodb://heroku_blsdcw8f:399rpnbh189636lpa3eeig5t2o@ds019980.mlab.com:19980/heroku_blsdcw8f",
     "theme": "Cloth",
     "trackStock": false,
     "orderHook": "",
