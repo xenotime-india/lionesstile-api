@@ -83,11 +83,6 @@
     "uglifycss": "0.0.27",
     "yenv": "^2.1.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
-  },
   "devDependencies": {
     "ava": "^2.4.0",
     "eslint": "^6.8.0",
