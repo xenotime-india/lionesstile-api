@@ -1,20 +1,18 @@
 {
-    "properties": {
-        "apiKey": {
-            "type": "string"
-        },
-        "hostUrl": {
-            "type": "string"
-        },
-        "newAddressApi": {
-            "type": "string"
-        },        
-        "priceApi": {
-            "type": "string"
-        }
+  "properties": {
+    "apiKey": {
+      "type": "string"
     },
-    "required": [
-        "api_key", "hostUrl", "newAddressApi", "priceApi"
-    ],
-    "additionalProperties": false
+    "hostUrl": {
+      "type": "string"
+    },
+    "newAddressApi": {
+      "type": "string"
+    },
+    "priceApi": {
+      "type": "string"
+    }
+  },
+  "required": ["api_key", "hostUrl", "newAddressApi", "priceApi"],
+  "additionalProperties": false
 }

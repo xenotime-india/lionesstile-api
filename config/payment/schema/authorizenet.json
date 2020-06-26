@@ -1,24 +1,19 @@
 {
-    "properties": {
-        "loginId": {
-            "type": "string"
-        },
-        "transactionKey": {
-            "type": "string"
-        },
-        "clientKey": {
-            "type": "string"
-        },
-        "mode": {
-            "type": "string",
-            "enum": ["test", "live"]
-        }
+  "properties": {
+    "loginId": {
+      "type": "string"
     },
-    "required": [
-        "loginId",
-        "transactionKey",
-        "clientKey",
-        "mode"
-    ],
-    "additionalProperties": false
+    "transactionKey": {
+      "type": "string"
+    },
+    "clientKey": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["test", "live"]
+    }
+  },
+  "required": ["loginId", "transactionKey", "clientKey", "mode"],
+  "additionalProperties": false
 }

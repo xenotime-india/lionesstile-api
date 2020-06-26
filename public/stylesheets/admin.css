@@ -89,7 +89,8 @@ body {
   border-radius: 5px;
   padding: 15px;
   margin: 10px;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.03), 0 6px 10px -8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.03),
+    0 6px 10px -8px rgba(0, 0, 0, 0.1);
 }
 .admin-card-body {
   padding: 5px;
@@ -250,12 +251,12 @@ body .popover {
 /*
  * Content
  */
-[role="main"] {
+[role='main'] {
   padding-top: 20px;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  [role="main"] {
+  [role='main'] {
     padding-top: 20px;
     padding-bottom: 20px;
   }

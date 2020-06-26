@@ -8,8 +8,9 @@
     "deploy": "gulp deploy",
     "testdata": "node lib/testdata.js",
     "test": "ava",
+    "prettier": "prettier --write **/*.js",
     "dev": "gulp watch",
-    "lint": "eslint ./"
+    "lint": "eslint --fix ./"
   },
   "ava": {
     "serial": true,
@@ -23,7 +24,7 @@
     }
   },
   "engines": {
-    "node": "10.16.0"
+    "node": "12.4.0"
   },
   "dependencies": {
     "@adyen/api-library": "^2.1.7",
@@ -35,11 +36,14 @@
     "body-parser": "^1.19.0",
     "cheerio": "^0.22.0",
     "colors": "^1.4.0",
+    "config": "^3.3.1",
     "connect-mongodb-session": "^2.2.0",
     "cookie-parser": "^1.4.4",
     "countries-list": "^2.5.0",
     "csurf": "^1.11.0",
     "dotenv": "^8.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-rate-limit": "^5.0.0",
@@ -50,6 +54,7 @@
     "gulp-less": "^4.0.1",
     "helmet": "^3.21.2",
     "html-entities": "^1.2.0",
+    "husky": "^4.2.5",
     "i18n": "^0.8.4",
     "lodash": "^4.17.15",
     "lunr": "^2.3.8",
@@ -66,6 +71,8 @@
     "numeral": "^2.0.6",
     "object-hash": "^2.0.1",
     "paypal-rest-sdk": "^1.6.9",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
     "rand-token": "^0.4.0",
     "rimraf": "^2.7.1",
     "sanitize-html": "^1.20.1",
@@ -75,6 +82,11 @@
     "stripe": "^7.12.0",
     "uglifycss": "0.0.27",
     "yenv": "^2.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "devDependencies": {
     "ava": "^2.4.0",
