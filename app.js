@@ -31,12 +31,6 @@ const ajv = new Ajv({ useDefaults: true });
 // get config
 const config = getConfig();
 
-const baseConfig = ajv.validate(require('./config/settingsSchema'), config);
-if(baseConfig === false){
-    console.log(colors.red(`settings.json incorrect: ${ajv.errorsText()}`));
-    process.exit(2);
-}
-
 // Validate the payment gateway config
 if(ajv.validate(
         require(`./config/payment/schema/${config.paymentGateway}`),
@@ -316,6 +310,8 @@ handlebars = handlebars.create({
         }
     }
 });
+
+console.log(config);
 
 // session store
 const store = new MongoStore({
